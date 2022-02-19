@@ -1,0 +1,1 @@
+const Router = require('../router/Router')const {getPerson, createPerson, updatePerson, deletePerson } = require('./person-controller')const router = new Router()router.get('/person', getPerson)router.post('/person', createPerson)router.put('/person', updatePerson)router.delete('/person', deletePerson)module.exports = router
